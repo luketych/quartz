@@ -1,30 +1,17 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[obsidian-digital-garden]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>obsidian-digital-garden</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 08 Sep 2024 21:44:07 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 08 Sep 2024 21:44:07 GMT</pubDate><copyright><![CDATA[luke]]></copyright><ttl>60</ttl><dc:creator>luke</dc:creator><item><title><![CDATA[index]]></title><description><![CDATA[ 
- <br><br><br><br>What I have built so far:<br>APIs for the following:<br>
-- live price &amp; volume data<br>
-- historical price &amp; volume data<br>
-- live trading event data<br>
-- historical trading event data<br>
-- event filtration (what determines a tradable event?)<br>
-- resistance / support levels<br>
-- tickerSymbols, company information, including sector, similar companies<br>
-- proxies<br>
-- real-time technical analysis calculations<br>Modules:<br>
-- logging<br>
-- environment and configuration variables<br>
-- utilities<br>
-- backtesting<br>
-- interactive brokers reader<br>
-- interactive brokers writer<br>The vision for the backtesting is to have a rapid CLI, with a frontend dashboard built on-top. Backtesting can be developed separately from live-trading, but eventually will be remerged back with the live-trading, feeding backtesting results into the trading algorithm, in order to modify risk-tolerance, watchlist prioritization, defensive/offensive balances, etc. As market conditions evolve the trading algorithms will adapt based on short-term backtesting results.<br>Interactive Brokers API is extremely finicky. I have split the code for it into two pieces, and have isolated it as much as possible from the main codebase. My codebase will simply read statuses from interactive brokers, in order to determine whether an order has filled, at what price, etc, etc, and update the order database with this information. All trades will be created internally, and then the ibWriter will send this information to interactive brokers gateway, creating the order on the interactive brokers side. <br>What I need help with:<br>
-1. process management<br>
-• using bash, pm2, ansible, or alternatives. This project is 90% nodejs, but python where it is required. In order to manage the complexities better process management will be needed in order to coordinate the different modules and handle errors.<br>
-2. central logging<br>
-• Implement a unified logging system that aggregates logs from various modules and APIs, ensuring real-time monitoring and troubleshooting.<br>
-3. backtesting via CLI, dashboard<br>
-• Develop a robust CLI-based backtesting solution.<br>
-• Create a web-based dashboard to visualize backtesting results and provide deeper insights into strategy performance.<br>
-4. order managements via CLI, dashboard<br>
-• Build a CLI-based interface for order management to handle live and historical trading data.<br>
-• Implement a dashboard for visual order management, including tracking and executing orders.<br>
-5. charting<br>
-• Integrate charting capabilities to visualize price data, trading events, resistance/support levels, and backtest performance.<br>
-• this leads to insight, faster backtest analysis and trade ideas.]]></description><link>cards/chingiz-proposal/index.html</link><guid isPermaLink="false">cards/chingiz-proposal/index.md</guid><dc:creator><![CDATA[luke]]></dc:creator><pubDate>Sun, 08 Sep 2024 21:44:00 GMT</pubDate></item></channel></rss>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[obsidian-digital-garden]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>obsidian-digital-garden</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 08 Sep 2024 22:03:31 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 08 Sep 2024 22:03:28 GMT</pubDate><copyright><![CDATA[luke]]></copyright><ttl>60</ttl><dc:creator>luke</dc:creator><item><title><![CDATA[!chop]]></title><description><![CDATA[ 
+ <br>Shiny Purple<br>
+Main lighter purple (with black otherside)<br>
+Dark Purple<br>The lighter purple can act similar to a project. It might act as the the command centre. I store things in here that helps me get things done, move forward on the Quest, list things to generate ideas, and connect with the other relevant cards.<br>The dark purple can be used as a lower-level card. More similar to a next action. But it's not a next action, because NAs and Projects can also spawn from a Quest, and must be tied back to the originator.]]></description><link>cards/backtest_charting_using_tradex_and_custom_overlays_to_show_pandl_and_allocation_over_time/!chop.html</link><guid isPermaLink="false">cards/backtest_charting_using_tradex_and_custom_overlays_to_show_pandl_and_allocation_over_time/!chop.md</guid><dc:creator><![CDATA[luke]]></dc:creator><pubDate>Tue, 03 Sep 2024 23:04:53 GMT</pubDate></item><item><title><![CDATA[index]]></title><description><![CDATA[ 
+ <br>
+  
+  
+  
+    
+    
+  
+  @@Discord@leoplaw# Tradex-chartCustom overlay,indicators.For backtesting:Show P&amp;L at any time for any stock on my list.OR for a subset of them.Show allocation (in % or in $) of total bucketed amount,or amount allocated to each stock/strategy/etc.Show all trading events (ie upgrades) on the charts.I want to see how my P&amp;L might be affected if I alter my enter and exit timings.<br><img alt="20240903_151224319.jpg" src="lib/media/20240903_151224319.jpg">]]></description><link>cards/backtest_charting_using_tradex_and_custom_overlays_to_show_pandl_and_allocation_over_time/index.html</link><guid isPermaLink="false">cards/backtest_charting_using_tradex_and_custom_overlays_to_show_pandl_and_allocation_over_time/index.md</guid><dc:creator><![CDATA[luke]]></dc:creator><pubDate>Sun, 08 Sep 2024 02:32:13 GMT</pubDate><enclosure url="lib/media/20240903_151224319.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/20240903_151224319.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[index]]></title><description><![CDATA[ 
+ <br>CTXs:<br>
+@@Whatsapp<br>README:<br>
+@Harbie has experienced an issue where deel.com is holding his $50k. They told him he needs to explain how he calculated his bonus, and prove, with documentation, the work that he did for that $50k payment.<br>What I need to do:<br>
+@Harbie wants me to email them, explaining that it was a retroactive payment for salary, plus a small bonus for his services. In case they also request I provide similar explanations/documentation then I will need to explain something similar.<br>Example: $7500 extra for the past 6 months in retroactive salary, plus a bonus totalling $50k.]]></description><link>cards/deel-dot-com_50k_doc/index.html</link><guid isPermaLink="false">cards/deel-dot-com_50k_doc/index.md</guid><dc:creator><![CDATA[luke]]></dc:creator><pubDate>Sun, 08 Sep 2024 06:57:54 GMT</pubDate></item><item><title><![CDATA[index2]]></title><description><![CDATA[ 
+ <br>INDEX - HELLO WORLD!!<br>This is a paragraph.<br><br><br><br><a data-href="Untitled Kanban" href="cards/digital-garden-comment-section/untitled-kanban.html" class="internal-link" target="_self" rel="noopener">Untitled Kanban</a>]]></description><link>cards/digital-garden-comment-section/index2.html</link><guid isPermaLink="false">cards/digital-garden-comment-section/index2.md</guid><dc:creator><![CDATA[luke]]></dc:creator><pubDate>Sun, 08 Sep 2024 07:13:51 GMT</pubDate></item></channel></rss>
