@@ -1,0 +1,1 @@
+console.log('publish.js loaded');
