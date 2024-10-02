@@ -1,0 +1,5 @@
+﻿Every identifiel node (a node could be an influencer, has a an author, or news site, or a mention of a stock) list of ticker symbols associated w/ it. And a score attached.
+
+Each product proper stock Propensity EVAR nodestrength can be msried based on history. ® For example, a bloomberg article mt cuiker recently be correlated w/ moving certain stocks. Or let's think from the perspective of ratings. Algorithm measure every rater's ability to my stocks, over past 30 clays, year, during bull during bear mikts, etc. For each rater, keep gathering clata until we have enough. If that rater makes anew prediction then ask, "do we have enough confidence in the rater's history to make a confident prediction this time?" How have other raters performed recently?
+
+markets,
